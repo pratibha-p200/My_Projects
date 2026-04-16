@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Page with Modals</title>
+  <link rel="stylesheet" href="popUps.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><button class="nav-button" id="aboutUsButton">About Us</button></li>
+      <li class="nav-hover">
+        Insights
+        <div class="hover-images">
+          <img src="D:\task04\softwareImage1.jpeg" alt="Insight 1">
+          <img src="D:\task04\softwareImage2.jpeg" alt="Insight 2">
+          <img src="D:\task04\softwareImage3.jpeg" alt="Insight 3">
+        </div>
+      </li>
+      <li><button class="nav-button" id="contactButton">Contact</button></li>
+      <li><button class="nav-button">Solutions</button></li>
+      <li><button class="nav-button">Careers</button></li>
+      <li><button class="nav-button" id="resultsButton">Results</button></li>
+    </ul>
+  </nav>
+  <!-- Navbar Image -->
+  <img src="D:\task04\navbarImage.jpg" alt="Navbar Image" class="navbar-image">
+
+  <div id="aboutUsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>About Us</h2>
+      <div class="modal-body">
+        <!-- Image Section -->
+        <img src="D:\task04\ourStoryImage.jpeg" alt="Our Story Image" class="modal-image"/>
+        
+        <!-- Content Section -->
+        <div class="modal-text">
+          <h3>Our Story</h3>
+          <p>We began with a bold vision to empower industries through innovation. Our journey has been one of commitment, creativity, and collaboration.</p>
+          
+          <img src="D:\task04\leadershipImage.jpeg" alt="Our Story Image" class="modal-image"/>
+          <h3>Our Leadership</h3>
+          <p>Led by a team of seasoned professionals, our leadership focuses on driving sustainable growth and creating impactful solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <button class="close-button">&times;</button>
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> contact@example.com</p>
+      <p><strong>Phone:</strong> +123 456 7890</p>
+      <p><strong>Address:</strong> 123 Business Street, Tech City, Innovation Land</p>
+    </div>
+  </div>
+
+  <div id="resultsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Results</h2>
+      <p><strong>Testimonials:</strong> "The service was exceptional..."</p>
+      <p><strong>Case Studies:</strong> Proven strategies for success...</p>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-container">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Building modern, responsive websites tailored to your needs.</p>
+        <button class="service-button" data-modal="webDevModal">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Mobile App Development</h3>
+        <p>Creating intuitive and efficient mobile applications.</p>
+        <button class="service-button" data-modal="mobileAppModal">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Boost your online presence with our marketing strategies.</p>
+        <button class="service-button" data-modal="digitalMarketingModal">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials-container">
+      <div class="card">
+        <h3>John Doe</h3>
+        <p>"The team delivered an exceptional website that exceeded my expectations!"</p>
+        <button class="testimonial-button" data-modal="testimonialJohn">Read More</button>
+      </div>
+      <div class="card">
+        <h3>Jane Smith</h3>
+        <p>"Outstanding app development services with great communication throughout."</p>
+        <button class="testimonial-button" data-modal="testimonialJane">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="webDevModal" class="modal">
+    <div class="modal-content">
+      <button class="close-button">&times;</button>
+      <h2>Web Development</h2>
+      <p>We specialize in creating high-performance, scalable, and visually appealing websites...</p>
+    </div>
+  </div>
+  <div id="mobileAppModal" class="modal">
+    <div class="modal-content">
+      <button class="close-button">&times;</button>
+      <h2>Mobile App Development</h2>
+      <p>Our team develops apps that provide seamless user experiences...</p>
+    </div>
+  </div>
+  <div id="digitalMarketingModal" class="modal">
+    <div class="modal-content">
+      <button class="close-button">&times;</button>
+      <h2>Digital Marketing</h2>
+      <p>Grow your brand's reach and engagement with our tailored marketing solutions...</p>
+    </div>
+  </div>
+  <div id="testimonialJohn" class="modal">
+    <div class="modal-content">
+      <button class="close-button">&times;</button>
+      <h2>John Doe</h2>
+      <p>"The team delivered an exceptional website that exceeded my expectations. Their attention to detail and professionalism were remarkable."</p>
+    </div>
+  </div>
+  <div id="testimonialJane" class="modal">
+    <div class="modal-content">
+      <button class="close-button">&times;</button>
+      <h2>Jane Smith</h2>
+      <p>"Outstanding app development services with great communication throughout. Highly recommend their expertise."</p>
+    </div>
+  </div>
+
+  <script src="popUps.js"></script>
+
+</body>
+</html>

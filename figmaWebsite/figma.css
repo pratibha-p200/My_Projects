@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: #DCEFFD;
+    color: black;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+   width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+/* Hero Section */
+#hero {
+    color: #0C1930;
+    text-align: center;
+    padding: 100px 20px;
+    background: #DCEFFD;
+    width: 100%;
+    height: 553px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #0C1930;
+    margin-left: -670px;
+}
+
+#hero p {
+    width: 337px;
+    height: 58px;
+    top: 344px;
+    left: 179px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+#hero h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; /* Increased font size for better visibility */
+    line-height: 1.4;
+    color: #000; /* black color */
+    text-align: center; /* Centers the text */
+    margin-top: -101px; /* Adds spacing between h3 and other elements */
+    margin-right: -540px;
+    width: 100%; /* Ensures the h3 tag occupies full width */
+}
+
+#hero h3 span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000; /* black color */
+}
+
+#hero img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Keeps the aspect ratio */
+    opacity: 1; /* Ensures the image is visible */
+    margin-top: -350px;
+    margin-right: -588px;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+    }
+
+    #hero div {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    #hero h2, #hero p, #hero h3 {
+        text-align: center;
+    }
+
+    #hero img {
+        margin-top: 20px;
+    }
+}
+
+.sub-heading{
+    text-align: center;
+}
+.sub-para{
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #F8F8FB;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #333;
+    max-width: 50%;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* intro section */
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card {
+    flex: 1 1 30%; /* Each card takes up 30% of the container width */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sub Cards Container */
+.sub-cards {
+    display: flex;
+    flex-direction: column; /* Arrange sub-cards in a vertical column */
+    gap: 10px;
+}
+
+/* Sub Card Styling */
+.sub-card {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tr, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column; /* Stack the cards vertically on smaller screens */
+    }
+    .card {
+        flex: 1 1 100%; /* Each card takes full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+    }
+}
+#sub-btn{
+    
+    color: white;
+    background-color: #007bff;
+}
+
+/* section3 start */
+  
+
+.icons-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .icons-section img {
+    max-width: 500px;
+    /* border-radius: 50%; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icons list container */
+  .icons-list-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .icons-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    width: 90%;
+  }
+  
+  /* Card styles */
+  .icon-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .icon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-card i {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .icon-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+  }
+
+  /* profile-section */
+  /* Center the heading */
+.profile-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid container */
+  .profile-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Add space between grid items */
+    padding: 0 20px;
+  }
+  
+  /* Individual profile card */
+  .profile-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover effect for profile card */
+  .profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Profile image */
+  .profile-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Profile name */
+  .profile-img h4 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Profile info text */
+  .profile-info p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Vertically center content */
+    gap: 20px; /* Optional: Add spacing between columns */
+    padding: 20px; /* Optional: Add padding around the section */
+}
+
+.text-content {
+    text-align: left;
+}
+
+.text-content h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.text-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.image-content {
+    max-width: 100%; /* Ensure the image scales correctly */
+    height: auto;
+}
+.groupImage{
+    margin-left: -1153px;
+    margin-bottom:46PX;
+}

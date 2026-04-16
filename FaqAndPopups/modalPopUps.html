@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Navbar</title>
+  <link rel="stylesheet" href="modalpopUp.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><button class="nav-button" id="aboutUsButton">About Us</button></li>
+      <li class="nav-hover">
+        Insights
+        <div class="hover-images">
+          <img src="D:\task04\softwareImage1.jpeg" alt="Insight 1">
+          <img src="D:\task04\softwareImage2.jpeg" alt="Insight 2">
+          <img src="D:\task04\softwareImage3.jpeg" alt="Insight 3">
+        </div>
+      </li>
+      <li><button class="nav-button">Contact</button></li>
+      <li><button class="nav-button">Solutions</button></li>
+      <li><button class="nav-button">Careers</button></li>
+      <li><button class="nav-button" id="resultsButton">Results</button></li>
+    </ul>
+  </nav>
+  <img src="D:\task04\navbarImage.jpg" class="navbarImage"/>
+
+  <!-- Modals -->
+  <div id="aboutUsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>About Us</h2>
+      <div class="modal-body">
+        <!-- Image Section -->
+        <img src="D:\task04\ourStoryImage.jpeg" alt="Our Story Image" class="modal-image"/>
+        
+        <!-- Content Section -->
+        <div class="modal-text">
+          <h3>Our Story</h3>
+          <p>We began with a bold vision to empower industries through innovation. Our journey has been one of commitment, creativity, and collaboration.</p>
+          
+          <img src="D:\task04\leadershipImage.jpeg" alt="Our Story Image" class="modal-image"/>
+          <h3>Our Leadership</h3>
+          <p>Led by a team of seasoned professionals, our leadership focuses on driving sustainable growth and creating impactful solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="resultsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Results</h2>
+      <p><strong>Testimonials:</strong> "The service was exceptional..."</p>
+      <p><strong>Case Studies:</strong> Proven strategies for success...</p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="modalpopUp.js"></script>
+</body>
+</html>
